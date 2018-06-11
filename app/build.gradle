@@ -17,6 +17,7 @@ android {
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
+        resConfigs "en" // And any other languages you support
     }
     buildTypes {
         release {
@@ -41,6 +42,8 @@ dependencies {
     // Displaying images
     implementation 'com.github.bumptech.glide:glide:3.7.0'
     implementation 'com.google.firebase:firebase-database:16.0.1'
+    implementation 'com.google.firebase:firebase-auth:16.0.1'
+    implementation 'com.firebaseui:firebase-ui-auth:4.0.1'
 }
 
 apply plugin: 'com.google.gms.google-services'
